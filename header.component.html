@@ -1,0 +1,33 @@
+<header>
+    <div class="container">
+        <a routerLink="/" class="logo">Foodeazz</a>
+        <nav>
+            <ul>
+                <li class="categorie-container">
+                    <a routerLink="/dashboard">Categories</a>
+                    <div class="categorie">
+                        <a routerLink="/diabetic">Diabetic</a>
+                        <a routerLink="/athlete">Athletic</a>
+                        <a routerLink="/gymnastics">Gymnastics</a>
+                        <a routerLink="/bodybuilding">Body Building</a>
+                    </div>
+                </li>
+                <li *ngIf="!isAuth">
+                  <a routerLink="/login">Login</a>
+                </li>
+                <li *ngIf="isAuth" class="menu-container">
+                    <a routerLink="/dashboard">{{user.name}}</a>
+                    <div class="menu">
+                        <a routerLink="/Profile">Profile</a>
+                        <a routerLink="/order">Orders</a>
+                        <a (click)="logout()">Logout</a>
+                    </div>
+                </li>
+                <li>
+                    <a routerLink="/cart-page">Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span></a>
+                </li>
+            </ul>
+        </nav>      
+    </div>
+</header>
+

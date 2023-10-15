@@ -1,0 +1,88 @@
+import { Food } from "./app/shared/model/Food";
+import { Tag } from "./app/shared/model/Tag";
+
+export const sample_foods:Food[]=[
+    {
+        id:'1',
+        name: 'Dominos',
+        price: 130,
+        favorite: false,
+        origins: ['Pizza Pepperoni'],
+        imageUrl: 'assets/food-1.jpg',
+        tags: ['FastFood', 'Pizza', 'Lunch'],
+      },
+      {
+        id:'2',
+        name: 'Parivaar',
+        price: 200,
+        favorite: true,
+        origins: ['Meatball'],
+        imageUrl: 'assets/food-2.jpg',
+        tags: ['SlowFood', 'Lunch'],
+      },
+      {
+        id:'3',
+        name: 'Burger King',
+        price: 80,
+        favorite: false,
+        origins: ['Hamburger'],
+        imageUrl: 'assets/food-3.jpg',
+        tags: ['FastFood', 'Hamburger'],
+      },
+      {
+        id:'4',
+        name: 'Snack Heaven',
+        price: 100,
+        favorite: true,
+        origins: ['French Fries'],
+        imageUrl: 'assets/food-4.jpg',
+        tags: ['FastFood', 'Fry'],
+      },
+      {
+        id:'5',
+        name: 'Platform 65',
+        price: 110,
+        favorite: false,
+        origins: ['Chicken Soup'],
+        imageUrl: 'assets/food-5.jpg',
+        tags: ['SlowFood', 'Soup'],
+      },
+      {
+        id:'6',
+        name: 'Go Fresh',
+        price: 110,
+        favorite: false,
+        origins: ['Vegetables Pizza'],
+        imageUrl: 'assets/food-6.jpg',
+        tags: ['FastFood', 'Pizza', 'Lunch'],
+      },
+      {
+        id:'7',
+        name: 'Burger King',
+        price: 120,
+        favorite: false,
+        origins: ['Spicy Cheese Burger'],
+        imageUrl: 'assets/food-7.jpg',
+        tags: ['FastFood', 'Burger', 'Lunch'],
+      },
+      {
+        id:'8',
+        name: 'Dominos',
+        price: 115,
+        favorite: false,
+        origins: ['Vegetables Magento Pizza'],
+        imageUrl: 'assets/food-8.jpg',
+        tags: ['FastFood', 'Pizza', 'Lunch'],
+      },
+]
+export const sample_tags:Tag[] = [
+    { name: 'All', count: 8 },
+    { name: 'FastFood', count: 4 },
+    { name: 'Pizza', count: 3 },
+    { name: 'Lunch', count: 3 },
+    { name: 'SlowFood', count: 2 },
+    { name: 'Hamburger', count: 2 },
+    { name: 'Fry', count: 1 },
+    { name: 'Soup', count: 1 },
+  ]
+  
